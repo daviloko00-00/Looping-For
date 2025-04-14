@@ -13,7 +13,7 @@ if (isNaN(numero) || numero <= 1) {
     for (let i = 1; i <= numero; i++){
         contagem = contagem + i;
         // mostra a soma parcial a cada iteração
-        frase += `${i} `; // transforma o número em string e adiciona ao resultado
+        frase += `${i}. `; // transforma o número em string e adiciona ao resultado
     }
     alert(frase);// mostra a contagem de 1 até o número digitado
 }
