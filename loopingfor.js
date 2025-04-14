@@ -1,23 +1,15 @@
-// programa que solicita ao usuário a soma de um até o número digitado
-
-//solicita que o usuário digite um número inteiro maior que 1
-const numero = parseInt(prompt("Digite um número:"));
-
-// inicializa a variável soma com 0, pois não contamos nada ainda
-contagem = 0;
-if (isNaN(numero) || numero <= 1) {
-    alert("Erro:\nPor favor, digite um número válido maior que 1.");
+const numeros = [];// Array para armazenar os números
+// Loop para solicitar 10 números ao usuário
+for (let i = 1; i <= 10; i++){
+const meupaunasuabunda = parseInt(prompt(`digite o número ${i}`))
+if (isNaN(meupaunasuabunda) || meupaunasuabunda < 0) {
+alert("Por favor, digite um número válido.");// Verifica se o número é válido
 } else {
-    // loop que conta os números de 1 até o número digitado
-    let frase = "";
-    for (let i = 1; i <= numero; i++){
-        contagem = contagem + i;
-        // mostra a soma parcial a cada iteração
-        frase += `${i} `; // transforma o número em string e adiciona ao resultado
-    }
-    alert(frase);// mostra a contagem de 1 até o número digitado
-}
-        
+    numeros.push(numeros);// Adiciona o número ao array
 
+}
+alert(`Os números digitados foram: ${numeros}`);// Exibe os números digitados
+
+}
 
 
