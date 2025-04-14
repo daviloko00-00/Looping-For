@@ -11,11 +11,14 @@ if (isNaN(numero) || numero <= 1) {
     // loop que soma os números de 1 até o número digitado
 
     for (let i = 1; i <= numero; i++){
-        soma = soma + i;
+        contagem = contagem + i;
+        // mostra a soma parcial a cada iteração
+        alert(`número ${i}: ${soma}`);
     }
     
     alert(`A soma dos números de 1 até ${numero} é: ${soma}`);
 }
+        
 
 
 
