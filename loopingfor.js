@@ -1,14 +1,14 @@
-const numeros = [];// Array para armazenar os números
+let soma = 0;// Variável para armazenar os números
 // Loop para solicitar 10 números ao usuário
 for (let i = 1; i <= 10; i++){
-const meupaunasuabunda = parseInt(prompt(`digite o número ${i}`))
-if (isNaN(meupaunasuabunda) || meupaunasuabunda < 0) {
+const número = parseInt(prompt(`digite o número ${i}`))
+if (isNaN(número) || número < 0) {
 alert("Por favor, digite um número válido.");// Verifica se o número é válido
 } else {
-    numeros.push(numeros);// Adiciona o número ao array
+    soma += número;// Adiciona o número à soma
 
 }
-alert(`Os números digitados foram: ${numeros}`);// Exibe os números digitados
+alert(`Os números digitados foram: ${soma}`);// Exibe os números digitados
 
 }
 
