@@ -1,9 +1,9 @@
 let soma = 0;// Variável para armazenar os números
 // Loop para solicitar 10 números ao usuário
 for (let i = 1; i <= 5; i++){
-const número = parseInt(prompt(`digite o número ${i}`))
+const número = parseFloat(prompt(`digite a nota ${i}`))
 if (isNaN(número) || número < 0) {
-alert("Por favor, digite um número válido.");// Verifica se o número é válido
+alert("Por favor, digite uma nota válido.");// Verifica se o número é válido
 } else {
     soma += número;// Adiciona o número à soma
     
@@ -12,8 +12,8 @@ alert("Por favor, digite um número válido.");// Verifica se o número é váli
 } 
 }
 media = soma /5;// Calcula a média
-alert(`a média dos números digitados foram: ${media}`);// Exibe a média
-alert(`a soma dos números digitados foram: ${soma}`);// Exibe os números digitados
+alert(`a média das notas digitadas foram: ${media}`);// Exibe a média
+alert(`a soma das notas digitadas foram: ${soma}`);// Exibe os números digitados
 
 
 
