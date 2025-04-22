@@ -4,6 +4,8 @@ const n2 = parseInt(prompt("Digite o segundo número:"));
 if (isNaN(n1) || isNaN(n2)) {
     alert("Por favor, digite números válidos.");
 } else {let NumPares = ""; // Variável para armazenar os números pares
+let inicio, fim; // Variáveis para armazenar o início e o fim do intervalo
+// O código solicita ao usuário dois números inteiros e exibe todos os números pares entre eles, inclusive os próprios números, se forem pares.
     if (n1 < n2) {// Verifica se o primeiro número é menor que o segundo
         inicio = n1; // Se sim, define o início como n1
         fim = n2; // e o fim como n2
@@ -19,7 +21,7 @@ if (isNaN(n1) || isNaN(n2)) {
         }
     }
         if (i % 2 === 0) {
-            NumPares += i + " "
+            NumPares += i + " ";
         }
     }
 
