@@ -4,11 +4,20 @@ const n2 = parseInt(prompt("Digite o segundo número:"));
 if (isNaN(n1) || isNaN(n2)) {
     alert("Por favor, digite números válidos.");
 } else {let NumPares = ""; // Variável para armazenar os números pares
-    let inicio = n1 < n2 ? n1 : n2;// o ponto de interrogação é o operador ternário, que é uma forma de simplificar um if-else
-    //Se n1 for menor que n2, o valor de inicio será n1. Se não, será n2.
-    let fim = n1 > n2 ? n1 : n2;// se n1 for maior que n2, o valor de fim será n1. Se não, será n2.
+    if (n1 < n2) {// Verifica se o primeiro número é menor que o segundo
+        inicio = n1; // Se sim, define o início como n1
+        fim = n2; // e o fim como n2
+    }
+    else {// Caso contrário, define o início como n2 e o fim como n1
+        inicio = n2;
+        fim = n1;
+    }
     for (let i = inicio; i <= fim; i++) {// o loop for percorre todos os números entre inicio e fim.
         // O loop começa em inicio e vai até fim, incrementando i em 1 a cada iteração.
+        if (i % 2 === 0) {
+            NumPares += i + " ";
+        }
+    }
         if (i % 2 === 0) {
             NumPares += i + " "
         }
