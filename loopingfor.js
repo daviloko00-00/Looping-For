@@ -10,7 +10,7 @@ if (isNaN(n1) || isNaN(n2)) {
     for (let i = inicio; i <= fim; i++) {// o loop for percorre todos os números entre inicio e fim.
         // O loop começa em inicio e vai até fim, incrementando i em 1 a cada iteração.
         if (i % 2 === 0) {
-            NumPares += i + " ";
+            NumPares += i + " "
         }
     }
 
