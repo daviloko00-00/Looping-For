@@ -26,5 +26,6 @@ if (isNaN(n1) || isNaN(n2)) {
     } else {
         alert("Números pares no intervalo: " + NumPares); // se houver números pares, eles serão exibidos em uma caixa de alerta.
     }
-}
+}// código finalizado
+
     
