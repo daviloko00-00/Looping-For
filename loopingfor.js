@@ -8,7 +8,8 @@ for (let i = 1; i <= 10; i++) {
         soma += número;// Adiciona o número à soma
 
     }
-    alert(`Os números digitados foram: ${soma}`);// Exibe os números digitados
+    alert(`o número escrito foi ${número}`);
+    alert(`A soma dos números digitados até agora foram: ${soma}`);// Exibe os números digitados
 
 }
 
