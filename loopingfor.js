@@ -12,8 +12,8 @@ alert("Por favor, digite uma nota válido.");// Verifica se o número é válido
 } 
 }
 media = soma /5;// Calcula a média
-alert(`a média das notas digitadas foram: ${media}`);// Exibe a média
-alert(`a soma das notas digitadas foram: ${soma}`);// Exibe os números digitados
+alert(`a média das notas digitadas foram: ${media}\na soma das notas digitadas foram: ${soma}`);// Exibe a média
+
 
 
 
